@@ -67,7 +67,7 @@ body {
 
 .map-responsive{
   overflow: hidden !important;
-  padding-bottom: 0 8rem 35rem !important;
+  padding: 0 8rem 35rem !important;
   position: relative !important;
   height: 450px !important;
 }
@@ -75,9 +75,9 @@ body {
 @media (max-width: 576px) {
   .map-responsive{
     overflow: hidden ;
-    padding-bottom: 0;
+    padding: 0 0 5rem 0;
     position: relative;
-    height: 0;
+    height: 450px;
   }
 }
 
