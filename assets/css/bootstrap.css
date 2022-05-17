@@ -66,18 +66,18 @@ body {
 /* Estilso del mapa */
 
 .map-responsive{
-  overflow: hidden;
-  padding-bottom: 0 8rem 35rem;
-  position: relative;
-  height: 0;
+  overflow: hidden !important;
+  padding-bottom: 0 8rem 35rem !important;
+  position: relative !important;
+  height: 0 !important;
 }
 
 @media (min-width: 576px) {
   .map-responsive{
-    overflow: hidden !important;
+    overflow: hidden ;
     padding-bottom: 0;
-    position: relative !important;
-    height: 0 !important;
+    position: relative;
+    height: 0;
   }
 }
 
