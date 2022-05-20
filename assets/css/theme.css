@@ -45,6 +45,121 @@ h6, .h6 {
   font-size: 21px !important;
 }
 
+/* sections */
+
+#aboutUs{
+  padding: 80px 0;
+}
+#services{
+  background-color: #f4f4fa;
+}
+.service-wrap{
+  margin: 1rem;
+}
+.service-container{
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px 1px #adacac;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+.service-container:hover{
+  box-shadow: none;
+}
+.service-image img{
+  width: 320px;
+  height: 170px;
+  border-radius: 8px 8px 0 0;
+}
+.service-content{
+  width: 320px;
+  height: 100px;
+  color: black;
+  background-color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.service-content:hover{
+  color: #fff;
+  transition: 0.5s;
+  background-color: #2F89FC ;
+
+}
+#ourClients{
+  background-color: #f4f4fa;
+}
+#ourTeamLayer{
+  background: url('../img/pexels-rodnae-productions-5922211.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#ourTeam{
+  background: linear-gradient(180deg, rgba(48,136,246,0.4) 3%, rgba(9,86,121,0.6) 60%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contactUs{
+  -webkit-box-shadow: inset 0px 8px 13px 4px rgba(56,56,56,0.61); 
+  box-shadow: inset 0px 6px 34px 12px rgba(173, 170, 170, 0.75);
+}
+#cajacookies {
+  display: none;
+  box-shadow: 0px 0px 5px 5px #808080;
+  background: linear-gradient(75deg, rgba(50, 48, 48, 0.8) 0%, rgb(48 136 246 / 80%) 49%, rgba(9,86,121,0.9) 100%);
+  opacity: 90%;
+  color: rgb(255, 254, 254);
+  font-size: 1.2rem;
+  padding: 10px 10px 10px 60px;
+  margin-bottom: 0px;
+  position: fixed;
+  z-index:999;
+  bottom: 0px;
+  width: 100%;
+}
+
+#cajacookies button {
+  color: black;
+  border: 1px solid red;
+  border-radius: 20px;
+  padding: 0.3rem 1.5rem;
+  margin: 0.8rem 0 0;
+}
+#cajacookies button:hover{
+  color: white;
+  transform: scale(1.03);
+  background-color: red;
+  box-shadow: inset 0px 6px 34px 12px rgba(56, 55, 55, 0.25);
+  transition: 0.5s;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:30px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
 /* Color Systems */
 .bg-black {
   background-color: #000 !important;
@@ -1194,6 +1309,10 @@ a.fg-light:hover, a.fg-light:focus {
 
 .navbar {
   min-height: 70px;
+  position: fixed;
+  background: white;
+  width: 100%;
+  z-index: 999;
 }
 
 .navbar-float {
@@ -1269,10 +1388,12 @@ a.fg-light:hover, a.fg-light:focus {
 
 .navbar-light .navbar-nav .nav-link {
   color: rgba(109, 114, 139, 0.75);
+  font-size: 1.2rem !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: #6D728B;
+  color: #3088f6;
+  text-decoration: underline;
 }
 
 .navbar-light .navbar-nav .show > .nav-link,
@@ -1528,7 +1649,7 @@ a.fg-light:hover, a.fg-light:focus {
 .back-to-top {
   position: fixed;
   bottom: 20px;
-  right: 25px;
+  right: 48.5vw;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -1622,7 +1743,7 @@ a.fg-light:hover, a.fg-light:focus {
 
 @media (min-width: 768px) {
   .page-banner.home-banner {
-    height: 540px;
+    height: 720px;
     max-height: unset;
   }
 }
@@ -1637,13 +1758,19 @@ a.fg-light:hover, a.fg-light:focus {
 }
 
 .owl-carousel .owl-stage-outer {
-  height: 100%;
+  height: 111%;
 }
 
 .hero-carousel-item {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 768px){
+  .gancho{
+    font-size: 1rem;
+  }
 }
 
 .hero-carousel-item::before {
@@ -1792,7 +1919,7 @@ a.fg-light:hover, a.fg-light:focus {
   position: relative;
   display: block;
   width: 100%;
-  border-radius: 6px;
+  border-radius: 8px 8px 0 0;
   background-color: #AFB7C1;
   overflow: hidden;
 }
@@ -1802,6 +1929,7 @@ a.fg-light:hover, a.fg-light:focus {
   padding: 20px;
   background-color: #fff;
   color: #33374B;
+  border-radius: 0 0 8px 8px;
 }
 
 .team-content .social-button {
@@ -1837,6 +1965,7 @@ a.fg-light:hover, a.fg-light:focus {
   overflow: hidden;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
+  box-shadow: 0px 2px 4px 1px #adacac;
 }
 
 .portfolio:hover {
@@ -1853,12 +1982,14 @@ a.fg-light:hover, a.fg-light:focus {
   position: relative;
   display: block;
   margin: 0 auto;
+  margin: 5px;
   padding: 30px 20px;
   background-color: #F2F4FE;
   color: #6D728B;
   border-radius: 8px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
+  box-shadow: 0px 2px 4px 1px #adacac;
 }
 
 .card-testimonial:hover {
@@ -2291,10 +2422,12 @@ a.fg-light:hover, a.fg-light:focus {
 .page-footer {
   position: relative;
   display: block;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 20px;
   background-color: #33374B;
   color: #fff;
+  -webkit-box-shadow: inset 0px 8px 13px 4px rgba(56,56,56,0.61); 
+  box-shadow: inset 0px 18px 18px 5px rgba(0,0,0,0.25);
 }
 
 .page-footer hr {
@@ -2324,7 +2457,8 @@ a.fg-light:hover, a.fg-light:focus {
 }
 
 .footer-menu a:hover {
-  color: #fff;
+  color: #3088f6;
+  text-decoration: none;
 }
 
 .sosmed-button a {
@@ -2337,6 +2471,9 @@ a.fg-light:hover, a.fg-light:focus {
   background-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.6);
   outline: none !important;
+}
+.sosmed-button a:hover{
+  color: #3088f6;
 }
 
 /* Custom Plugin */
