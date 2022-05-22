@@ -106,6 +106,9 @@ h6, .h6 {
   -webkit-box-shadow: inset 0px 8px 13px 4px rgba(56,56,56,0.61); 
   box-shadow: inset 0px 6px 34px 12px rgba(173, 170, 170, 0.75);
 }
+
+/* cookies */
+ 
 #cajacookies {
   display: none;
   box-shadow: 0px 0px 5px 5px #808080;
